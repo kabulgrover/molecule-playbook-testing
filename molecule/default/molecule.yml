@@ -5,7 +5,7 @@ driver:
   name: delegated
 platforms:
   - name: instance
-    immage: geerlingguy/docker-centos8-ansible:latest
+    immage: geerlingguy/docker-${MOLECULE_DISTRO:centos8}-ansible:latest
     command: ""
     volume:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
